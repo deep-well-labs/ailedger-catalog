@@ -1,0 +1,147 @@
+{
+  "encryptedDNS" : [
+    {
+      "domains" : [
+        "dns.google",
+        "dns.google.com"
+      ],
+      "id" : "google-dns",
+      "name" : "Google DNS"
+    },
+    {
+      "domains" : [
+        "cloudflare-dns.com",
+        "one.one.one.one"
+      ],
+      "id" : "cloudflare-dns",
+      "name" : "Cloudflare DNS"
+    },
+    {
+      "domains" : [
+        "dns.quad9.net"
+      ],
+      "id" : "quad9",
+      "name" : "Quad9"
+    },
+    {
+      "domains" : [
+        "doh.opendns.com"
+      ],
+      "id" : "opendns",
+      "name" : "OpenDNS"
+    },
+    {
+      "domains" : [
+        "dns.nextdns.io"
+      ],
+      "id" : "nextdns",
+      "name" : "NextDNS"
+    },
+    {
+      "domains" : [
+        "dns.adguard-dns.com",
+        "dns.adguard.com"
+      ],
+      "id" : "adguard-dns",
+      "name" : "AdGuard DNS"
+    }
+  ],
+  "issuedAt" : "2026-11-19T19:29:05Z",
+  "keyID" : "ledger-1",
+  "schema" : 1,
+  "vendors" : [
+    {
+      "domains" : [
+        "openai.com",
+        "chatgpt.com",
+        "oaiusercontent.com"
+      ],
+      "id" : "openai",
+      "name" : "OpenAI"
+    },
+    {
+      "domains" : [
+        "anthropic.com",
+        "claude.ai",
+        "claude.com"
+      ],
+      "id" : "anthropic",
+      "name" : "Anthropic"
+    },
+    {
+      "domains" : [
+        "gemini.google.com",
+        "generativelanguage.googleapis.com",
+        "aistudio.google.com"
+      ],
+      "id" : "google-gemini",
+      "name" : "Google Gemini"
+    },
+    {
+      "domains" : [
+        "perplexity.ai"
+      ],
+      "id" : "perplexity",
+      "name" : "Perplexity"
+    },
+    {
+      "domains" : [
+        "cursor.sh",
+        "cursor.com"
+      ],
+      "id" : "cursor",
+      "name" : "Cursor"
+    },
+    {
+      "domains" : [
+        "mistral.ai"
+      ],
+      "id" : "mistral",
+      "name" : "Mistral"
+    },
+    {
+      "domains" : [
+        "x.ai",
+        "grok.com"
+      ],
+      "id" : "xai",
+      "name" : "xAI"
+    },
+    {
+      "domains" : [
+        "copilot.microsoft.com"
+      ],
+      "id" : "microsoft-copilot",
+      "name" : "Microsoft Copilot"
+    },
+    {
+      "domains" : [
+        "githubcopilot.com"
+      ],
+      "id" : "github-copilot",
+      "name" : "GitHub Copilot"
+    },
+    {
+      "domains" : [
+        "huggingface.co"
+      ],
+      "id" : "huggingface",
+      "name" : "Hugging Face"
+    },
+    {
+      "domains" : [
+        "deepseek.com"
+      ],
+      "id" : "deepseek",
+      "name" : "DeepSeek"
+    },
+    {
+      "domains" : [
+        "meta.ai"
+      ],
+      "id" : "meta-ai",
+      "name" : "Meta AI"
+    }
+  ],
+  "version" : 1
+}
