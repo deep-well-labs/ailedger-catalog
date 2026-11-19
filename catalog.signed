@@ -1,4 +1,4 @@
-ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ6y58elqUy7ai2AA==
+ledger-1 KIr/r7Rqlr7hcMSdwVc3+MKSqZVDK19gGiSknnshofQQejDA1xaFkqhmD1FUtbtKCoWAm8D8gCEBdRzF5pMMCw==
 {
   "encryptedDNS" : [
     {
@@ -33,13 +33,6 @@ ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ
     },
     {
       "domains" : [
-        "dns.nextdns.io"
-      ],
-      "id" : "nextdns",
-      "name" : "NextDNS"
-    },
-    {
-      "domains" : [
         "dns.adguard-dns.com",
         "dns.adguard.com"
       ],
@@ -47,7 +40,7 @@ ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-19T19:29:05Z",
+  "issuedAt" : "2026-11-19T19:42:01Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
@@ -64,7 +57,8 @@ ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ
       "domains" : [
         "anthropic.com",
         "claude.ai",
-        "claude.com"
+        "claude.com",
+        "claudeusercontent.com"
       ],
       "id" : "anthropic",
       "name" : "Anthropic"
@@ -87,47 +81,11 @@ ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ
     },
     {
       "domains" : [
-        "cursor.sh",
-        "cursor.com"
-      ],
-      "id" : "cursor",
-      "name" : "Cursor"
-    },
-    {
-      "domains" : [
-        "mistral.ai"
-      ],
-      "id" : "mistral",
-      "name" : "Mistral"
-    },
-    {
-      "domains" : [
         "x.ai",
         "grok.com"
       ],
       "id" : "xai",
-      "name" : "xAI"
-    },
-    {
-      "domains" : [
-        "copilot.microsoft.com"
-      ],
-      "id" : "microsoft-copilot",
-      "name" : "Microsoft Copilot"
-    },
-    {
-      "domains" : [
-        "githubcopilot.com"
-      ],
-      "id" : "github-copilot",
-      "name" : "GitHub Copilot"
-    },
-    {
-      "domains" : [
-        "huggingface.co"
-      ],
-      "id" : "huggingface",
-      "name" : "Hugging Face"
+      "name" : "xAI Grok"
     },
     {
       "domains" : [
@@ -142,7 +100,441 @@ ledger-1 Jn2d7pt/i/0JSommw5Bi2QWS4C667szx6CSETcSnGSBCcvfxNLxGpR/tpGCz8z3mP06bsMJ
       ],
       "id" : "meta-ai",
       "name" : "Meta AI"
+    },
+    {
+      "domains" : [
+        "copilot.microsoft.com",
+        "copilot.cloud.microsoft"
+      ],
+      "id" : "microsoft-copilot",
+      "name" : "Microsoft Copilot"
+    },
+    {
+      "domains" : [
+        "mistral.ai"
+      ],
+      "id" : "mistral",
+      "name" : "Mistral"
+    },
+    {
+      "domains" : [
+        "character.ai"
+      ],
+      "id" : "character-ai",
+      "name" : "Character.AI"
+    },
+    {
+      "domains" : [
+        "poe.com"
+      ],
+      "id" : "poe",
+      "name" : "Poe"
+    },
+    {
+      "domains" : [
+        "heypi.com"
+      ],
+      "id" : "pi",
+      "name" : "Pi (Inflection)"
+    },
+    {
+      "domains" : [
+        "you.com"
+      ],
+      "id" : "you-com",
+      "name" : "You.com"
+    },
+    {
+      "domains" : [
+        "kimi.com",
+        "kimi.ai",
+        "api.moonshot.ai"
+      ],
+      "id" : "kimi",
+      "name" : "Kimi (Moonshot AI)"
+    },
+    {
+      "domains" : [
+        "qwen.ai"
+      ],
+      "id" : "qwen",
+      "name" : "Qwen (Alibaba)"
+    },
+    {
+      "domains" : [
+        "doubao.com"
+      ],
+      "id" : "doubao",
+      "name" : "Doubao (ByteDance)"
+    },
+    {
+      "domains" : [
+        "ernie.baidu.com"
+      ],
+      "id" : "ernie",
+      "name" : "Ernie (Baidu)"
+    },
+    {
+      "domains" : [
+        "z.ai"
+      ],
+      "id" : "zai",
+      "name" : "Z.ai (Zhipu GLM)"
+    },
+    {
+      "domains" : [
+        "replika.com"
+      ],
+      "id" : "replika",
+      "name" : "Replika"
+    },
+    {
+      "domains" : [
+        "huggingface.co"
+      ],
+      "id" : "huggingface",
+      "name" : "Hugging Face"
+    },
+    {
+      "domains" : [
+        "api.cohere.com",
+        "dashboard.cohere.com"
+      ],
+      "id" : "cohere",
+      "name" : "Cohere"
+    },
+    {
+      "domains" : [
+        "api.ai21.com"
+      ],
+      "id" : "ai21",
+      "name" : "AI21 Labs"
+    },
+    {
+      "domains" : [
+        "api.groq.com",
+        "console.groq.com"
+      ],
+      "id" : "groq",
+      "name" : "Groq"
+    },
+    {
+      "domains" : [
+        "together.ai"
+      ],
+      "id" : "together-ai",
+      "name" : "Together AI"
+    },
+    {
+      "domains" : [
+        "api.fireworks.ai",
+        "app.fireworks.ai"
+      ],
+      "id" : "fireworks-ai",
+      "name" : "Fireworks AI"
+    },
+    {
+      "domains" : [
+        "replicate.com",
+        "replicate.delivery"
+      ],
+      "id" : "replicate",
+      "name" : "Replicate"
+    },
+    {
+      "domains" : [
+        "openrouter.ai"
+      ],
+      "id" : "openrouter",
+      "name" : "OpenRouter"
+    },
+    {
+      "domains" : [
+        "api.cerebras.ai",
+        "cloud.cerebras.ai"
+      ],
+      "id" : "cerebras",
+      "name" : "Cerebras"
+    },
+    {
+      "domains" : [
+        "api.sambanova.ai",
+        "cloud.sambanova.ai"
+      ],
+      "id" : "sambanova",
+      "name" : "SambaNova"
+    },
+    {
+      "domains" : [
+        "api.deepinfra.com"
+      ],
+      "id" : "deepinfra",
+      "name" : "DeepInfra"
+    },
+    {
+      "domains" : [
+        "openai.azure.com"
+      ],
+      "id" : "azure-openai",
+      "name" : "Azure OpenAI Service"
+    },
+    {
+      "domains" : [
+        "integrate.api.nvidia.com"
+      ],
+      "id" : "nvidia-nim",
+      "name" : "NVIDIA NIM hosted API"
+    },
+    {
+      "domains" : [
+        "api.stability.ai",
+        "platform.stability.ai"
+      ],
+      "id" : "stability-ai",
+      "name" : "Stability AI"
+    },
+    {
+      "domains" : [
+        "cursor.sh",
+        "cursor.com"
+      ],
+      "id" : "cursor",
+      "name" : "Cursor"
+    },
+    {
+      "domains" : [
+        "githubcopilot.com"
+      ],
+      "id" : "github-copilot",
+      "name" : "GitHub Copilot"
+    },
+    {
+      "domains" : [
+        "windsurf.com",
+        "codeium.com",
+        "codeiumdata.com"
+      ],
+      "id" : "windsurf",
+      "name" : "Windsurf (Codeium)"
+    },
+    {
+      "domains" : [
+        "lovable.dev"
+      ],
+      "id" : "lovable",
+      "name" : "Lovable"
+    },
+    {
+      "domains" : [
+        "bolt.new"
+      ],
+      "id" : "bolt",
+      "name" : "Bolt"
+    },
+    {
+      "domains" : [
+        "v0.app"
+      ],
+      "id" : "v0",
+      "name" : "v0 (Vercel)"
+    },
+    {
+      "domains" : [
+        "tabnine.com"
+      ],
+      "id" : "tabnine",
+      "name" : "Tabnine"
+    },
+    {
+      "domains" : [
+        "augmentcode.com"
+      ],
+      "id" : "augment-code",
+      "name" : "Augment Code"
+    },
+    {
+      "domains" : [
+        "devin.ai"
+      ],
+      "id" : "cognition-devin",
+      "name" : "Devin (Cognition)"
+    },
+    {
+      "domains" : [
+        "ampcode.com"
+      ],
+      "id" : "amp",
+      "name" : "Amp"
+    },
+    {
+      "domains" : [
+        "kiro.dev"
+      ],
+      "id" : "kiro",
+      "name" : "Kiro"
+    },
+    {
+      "domains" : [
+        "factory.ai"
+      ],
+      "id" : "factory",
+      "name" : "Factory"
+    },
+    {
+      "domains" : [
+        "cline.bot"
+      ],
+      "id" : "cline",
+      "name" : "Cline"
+    },
+    {
+      "domains" : [
+        "continue.dev"
+      ],
+      "id" : "continue",
+      "name" : "Continue"
+    },
+    {
+      "domains" : [
+        "midjourney.com"
+      ],
+      "id" : "midjourney",
+      "name" : "Midjourney"
+    },
+    {
+      "domains" : [
+        "runwayml.com"
+      ],
+      "id" : "runway",
+      "name" : "Runway"
+    },
+    {
+      "domains" : [
+        "pika.art",
+        "pika.me"
+      ],
+      "id" : "pika",
+      "name" : "Pika"
+    },
+    {
+      "domains" : [
+        "lumalabs.ai"
+      ],
+      "id" : "luma-ai",
+      "name" : "Luma AI"
+    },
+    {
+      "domains" : [
+        "leonardo.ai"
+      ],
+      "id" : "leonardo-ai",
+      "name" : "Leonardo.ai"
+    },
+    {
+      "domains" : [
+        "ideogram.ai"
+      ],
+      "id" : "ideogram",
+      "name" : "Ideogram"
+    },
+    {
+      "domains" : [
+        "bfl.ai"
+      ],
+      "id" : "black-forest-labs",
+      "name" : "Black Forest Labs (FLUX)"
+    },
+    {
+      "domains" : [
+        "krea.ai"
+      ],
+      "id" : "krea",
+      "name" : "Krea"
+    },
+    {
+      "domains" : [
+        "heygen.com"
+      ],
+      "id" : "heygen",
+      "name" : "HeyGen"
+    },
+    {
+      "domains" : [
+        "synthesia.io"
+      ],
+      "id" : "synthesia",
+      "name" : "Synthesia"
+    },
+    {
+      "domains" : [
+        "elevenlabs.io"
+      ],
+      "id" : "elevenlabs",
+      "name" : "ElevenLabs"
+    },
+    {
+      "domains" : [
+        "suno.com"
+      ],
+      "id" : "suno",
+      "name" : "Suno"
+    },
+    {
+      "domains" : [
+        "udio.com"
+      ],
+      "id" : "udio",
+      "name" : "Udio"
+    },
+    {
+      "domains" : [
+        "otter.ai"
+      ],
+      "id" : "otter-ai",
+      "name" : "Otter.ai"
+    },
+    {
+      "domains" : [
+        "fireflies.ai"
+      ],
+      "id" : "fireflies-ai",
+      "name" : "Fireflies.ai"
+    },
+    {
+      "domains" : [
+        "gamma.app"
+      ],
+      "id" : "gamma",
+      "name" : "Gamma"
+    },
+    {
+      "domains" : [
+        "jasper.ai"
+      ],
+      "id" : "jasper",
+      "name" : "Jasper"
+    },
+    {
+      "domains" : [
+        "smith.langchain.com"
+      ],
+      "id" : "langsmith",
+      "name" : "LangSmith (LangChain)"
+    },
+    {
+      "domains" : [
+        "helicone.ai"
+      ],
+      "id" : "helicone",
+      "name" : "Helicone"
+    },
+    {
+      "domains" : [
+        "langfuse.com"
+      ],
+      "id" : "langfuse",
+      "name" : "Langfuse"
     }
   ],
-  "version" : 1
+  "version" : 2
 }
