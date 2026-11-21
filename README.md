@@ -9,4 +9,4 @@ The app only accepts a list signed by a key it trusts, with a higher version num
 
 The file is public and holds only the names of AI services and the domains they use. The app sends nothing about its user when it fetches it.
 
-Current list: version 3.
+Current list: version 4.

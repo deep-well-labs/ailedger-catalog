@@ -1,7 +1,8 @@
-ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1dZYYlYqVV5pCvsAA==
+ledger-1 UdWVzkOKtlp6iPgFgpNQkGWYgF35xeUU7vConagfX6RA7N8EPqcw/Zgc4RQuc1IzG5tjK2vr4xF8qVfT9cA/Dg==
 {
   "encryptedDNS" : [
     {
+      "category" : "encrypted-dns",
       "domains" : [
         "dns.google",
         "dns.google.com"
@@ -10,6 +11,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Google DNS"
     },
     {
+      "category" : "encrypted-dns",
       "domains" : [
         "cloudflare-dns.com",
         "one.one.one.one"
@@ -18,6 +20,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Cloudflare DNS"
     },
     {
+      "category" : "encrypted-dns",
       "domains" : [
         "dns.quad9.net"
       ],
@@ -25,6 +28,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Quad9"
     },
     {
+      "category" : "encrypted-dns",
       "domains" : [
         "doh.opendns.com"
       ],
@@ -32,6 +36,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "OpenDNS"
     },
     {
+      "category" : "encrypted-dns",
       "domains" : [
         "dns.adguard-dns.com",
         "dns.adguard.com"
@@ -40,20 +45,23 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-21T16:27:53Z",
+  "issuedAt" : "2026-11-21T17:32:42Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
     {
+      "category" : "assistants",
       "domains" : [
         "openai.com",
         "chatgpt.com",
         "oaiusercontent.com"
       ],
       "id" : "openai",
-      "name" : "OpenAI"
+      "name" : "OpenAI",
+      "notes" : "api.openai.com confirmed from the API reference. chatgpt.com and oaiusercontent.com are listed in OpenAI's network-recommendations help article, which blocks automated fetching: confirm by opening it."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "anthropic.com",
         "claude.ai",
@@ -61,9 +69,11 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
         "claudeusercontent.com"
       ],
       "id" : "anthropic",
-      "name" : "Anthropic"
+      "name" : "Anthropic",
+      "notes" : "claudeusercontent.com added: named in Anthropic's network configuration doc (artifacts and the browser bridge)."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "gemini.google.com",
         "generativelanguage.googleapis.com",
@@ -73,6 +83,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Google Gemini"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "perplexity.ai"
       ],
@@ -80,14 +91,17 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Perplexity"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "x.ai",
         "grok.com"
       ],
       "id" : "xai",
-      "name" : "xAI Grok"
+      "name" : "xAI Grok",
+      "notes" : "x.ai also hosts corporate pages; api.x.ai and grok.com are the stronger signals. Never list x.com."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "deepseek.com"
       ],
@@ -95,21 +109,26 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "DeepSeek"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "meta.ai"
       ],
       "id" : "meta-ai",
-      "name" : "Meta AI"
+      "name" : "Meta AI",
+      "notes" : "Meta AI inside WhatsApp, Instagram and Facebook uses shared Meta hostnames and cannot be detected by domain."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "copilot.microsoft.com",
         "copilot.cloud.microsoft"
       ],
       "id" : "microsoft-copilot",
-      "name" : "Microsoft Copilot"
+      "name" : "Microsoft Copilot",
+      "notes" : "copilot.cloud.microsoft is named on Microsoft Learn. copilot.microsoft.com was seen only in a search snippet of the Learn allow list: confirm by hand. Never list cloud.microsoft, microsoft.com or bing.com."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "mistral.ai"
       ],
@@ -117,6 +136,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Mistral"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "character.ai"
       ],
@@ -124,6 +144,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Character.AI"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "poe.com"
       ],
@@ -131,20 +152,25 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Poe"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "heypi.com"
       ],
       "id" : "pi",
-      "name" : "Pi (Inflection)"
+      "name" : "Pi (Inflection)",
+      "notes" : "heypi.com is the only domain Inflection's own site names. pi.ai is likely current but unconfirmed; see the watchlist."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "you.com"
       ],
       "id" : "you-com",
-      "name" : "You.com"
+      "name" : "You.com",
+      "notes" : "Now presents mainly as a search and agent API provider; a weaker signal."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "kimi.com",
         "kimi.ai",
@@ -154,27 +180,34 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Kimi (Moonshot AI)"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "qwen.ai"
       ],
       "id" : "qwen",
-      "name" : "Qwen (Alibaba)"
+      "name" : "Qwen (Alibaba)",
+      "notes" : "Alibaba Cloud's shared API hosts (aliyuncs.com) are left out; see the watchlist."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "doubao.com"
       ],
       "id" : "doubao",
-      "name" : "Doubao (ByteDance)"
+      "name" : "Doubao (ByteDance)",
+      "notes" : "The Ark API host also serves other vendors' models, so it is left out; see the watchlist."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "ernie.baidu.com"
       ],
       "id" : "ernie",
-      "name" : "Ernie (Baidu)"
+      "name" : "Ernie (Baidu)",
+      "notes" : "A dedicated host under baidu.com. The Qianfan API host also serves other vendors' models, so it is left out."
     },
     {
+      "category" : "assistants",
       "domains" : [
         "z.ai"
       ],
@@ -182,6 +215,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Z.ai (Zhipu GLM)"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "replika.com"
       ],
@@ -189,29 +223,36 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Replika"
     },
     {
+      "category" : "assistants",
       "domains" : [
         "cp4.cloudflare.com",
         "apple-relay.apple.com"
       ],
       "id" : "apple-intelligence",
-      "name" : "Apple Intelligence"
+      "name" : "Apple Intelligence",
+      "notes" : "Covers Private Cloud Compute (cp4.cloudflare.com) and Apple Intelligence Extensions (apple-relay.apple.com) only; on-device inference makes no DNS queries. apple-relay.cloudflare.com and apple-relay.fastly-edge.com are left out because they also carry iCloud Private Relay and other non-AI Apple relay traffic."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "huggingface.co"
       ],
       "id" : "huggingface",
-      "name" : "Hugging Face"
+      "name" : "Hugging Face",
+      "notes" : "Lookups also come from model and dataset downloads in non-AI apps, so this means model-hub use more than chat."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.cohere.com",
         "dashboard.cohere.com"
       ],
       "id" : "cohere",
-      "name" : "Cohere"
+      "name" : "Cohere",
+      "notes" : "Bare cohere.com also hosts the marketing site, so only the API and dashboard hosts are listed."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.ai21.com"
       ],
@@ -219,14 +260,17 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "AI21 Labs"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.groq.com",
         "console.groq.com"
       ],
       "id" : "groq",
-      "name" : "Groq"
+      "name" : "Groq",
+      "notes" : "The inference company, not xAI's Grok."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "together.ai"
       ],
@@ -234,6 +278,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Together AI"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.fireworks.ai",
         "app.fireworks.ai"
@@ -242,14 +287,17 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Fireworks AI"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "replicate.com",
         "replicate.delivery"
       ],
       "id" : "replicate",
-      "name" : "Replicate"
+      "name" : "Replicate",
+      "notes" : "replicate.com also hosts the model-browsing site."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "openrouter.ai"
       ],
@@ -257,6 +305,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "OpenRouter"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.cerebras.ai",
         "cloud.cerebras.ai"
@@ -265,6 +314,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Cerebras"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.sambanova.ai",
         "cloud.sambanova.ai"
@@ -273,6 +323,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "SambaNova"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.deepinfra.com"
       ],
@@ -280,20 +331,25 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "DeepInfra"
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "openai.azure.com"
       ],
       "id" : "azure-openai",
-      "name" : "Azure OpenAI Service"
+      "name" : "Azure OpenAI Service",
+      "notes" : "Per-customer hosts of the form resource.openai.azure.com, matched by the fixed suffix. Newer Foundry hosts use shared Azure domains and are left out."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "integrate.api.nvidia.com"
       ],
       "id" : "nvidia-nim",
-      "name" : "NVIDIA NIM hosted API"
+      "name" : "NVIDIA NIM hosted API",
+      "notes" : "This exact host only; never nvidia.com."
     },
     {
+      "category" : "api-platforms",
       "domains" : [
         "api.stability.ai",
         "platform.stability.ai"
@@ -302,37 +358,46 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Stability AI"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "cursor.sh",
         "cursor.com"
       ],
       "id" : "cursor",
-      "name" : "Cursor"
+      "name" : "Cursor",
+      "notes" : "cursor.sh is the backend and the strong signal. cursor.com also hosts the marketing site, docs and dashboard."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "githubcopilot.com"
       ],
       "id" : "github-copilot",
-      "name" : "GitHub Copilot"
+      "name" : "GitHub Copilot",
+      "notes" : "Other Copilot hosts sit on shared GitHub domains and are left out."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "windsurf.com",
         "codeium.com",
         "codeiumdata.com"
       ],
       "id" : "windsurf",
-      "name" : "Windsurf (Codeium)"
+      "name" : "Windsurf (Codeium)",
+      "notes" : "codeiumdata.com may be an update or package host rather than a model call."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "lovable.dev"
       ],
       "id" : "lovable",
-      "name" : "Lovable"
+      "name" : "Lovable",
+      "notes" : "lovable.app and lovableproject.com host user apps and are left out."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "bolt.new"
       ],
@@ -340,13 +405,16 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Bolt"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "v0.app"
       ],
       "id" : "v0",
-      "name" : "v0 (Vercel)"
+      "name" : "v0 (Vercel)",
+      "notes" : "The older v0.dev is not named on a vendor page and is left out."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "tabnine.com"
       ],
@@ -354,6 +422,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Tabnine"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "augmentcode.com"
       ],
@@ -361,6 +430,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Augment Code"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "devin.ai"
       ],
@@ -368,6 +438,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Devin (Cognition)"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "ampcode.com"
       ],
@@ -375,48 +446,61 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Amp"
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "kiro.dev"
       ],
       "id" : "kiro",
-      "name" : "Kiro"
+      "name" : "Kiro",
+      "notes" : "Its legacy backend uses shared amazonaws.com hosts, which are left out."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "factory.ai"
       ],
       "id" : "factory",
-      "name" : "Factory"
+      "name" : "Factory",
+      "notes" : "Docs have moved to factory.com; watch for a domain change."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "cline.bot"
       ],
       "id" : "cline",
-      "name" : "Cline"
+      "name" : "Cline",
+      "notes" : "Most Cline traffic goes straight to the user's chosen model provider, so this shows only Cline account or API use."
     },
     {
+      "category" : "coding-tools",
       "domains" : [
         "continue.dev"
       ],
       "id" : "continue",
-      "name" : "Continue"
+      "name" : "Continue",
+      "notes" : "A weak signal: most traffic goes to the user's configured provider."
     },
     {
+      "category" : "media",
       "domains" : [
         "midjourney.com"
       ],
       "id" : "midjourney",
-      "name" : "Midjourney"
+      "name" : "Midjourney",
+      "notes" : "Docs pages block fetching. Never list discord.com."
     },
     {
+      "category" : "media",
       "domains" : [
         "runwayml.com"
       ],
       "id" : "runway",
-      "name" : "Runway"
+      "name" : "Runway",
+      "notes" : "runway.com appears in newer docs but is unconfirmed as AI-only; see the watchlist."
     },
     {
+      "category" : "media",
       "domains" : [
         "pika.art",
         "pika.me"
@@ -425,6 +509,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Pika"
     },
     {
+      "category" : "media",
       "domains" : [
         "lumalabs.ai"
       ],
@@ -432,6 +517,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Luma AI"
     },
     {
+      "category" : "media",
       "domains" : [
         "leonardo.ai"
       ],
@@ -439,6 +525,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Leonardo.ai"
     },
     {
+      "category" : "media",
       "domains" : [
         "ideogram.ai"
       ],
@@ -446,6 +533,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Ideogram"
     },
     {
+      "category" : "media",
       "domains" : [
         "bfl.ai"
       ],
@@ -453,6 +541,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Black Forest Labs (FLUX)"
     },
     {
+      "category" : "media",
       "domains" : [
         "krea.ai"
       ],
@@ -460,6 +549,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Krea"
     },
     {
+      "category" : "media",
       "domains" : [
         "heygen.com"
       ],
@@ -467,6 +557,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "HeyGen"
     },
     {
+      "category" : "media",
       "domains" : [
         "synthesia.io"
       ],
@@ -474,6 +565,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Synthesia"
     },
     {
+      "category" : "media",
       "domains" : [
         "elevenlabs.io"
       ],
@@ -481,6 +573,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "ElevenLabs"
     },
     {
+      "category" : "media",
       "domains" : [
         "suno.com"
       ],
@@ -488,6 +581,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Suno"
     },
     {
+      "category" : "media",
       "domains" : [
         "udio.com"
       ],
@@ -495,6 +589,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Udio"
     },
     {
+      "category" : "media",
       "domains" : [
         "otter.ai"
       ],
@@ -502,6 +597,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Otter.ai"
     },
     {
+      "category" : "media",
       "domains" : [
         "fireflies.ai"
       ],
@@ -509,6 +605,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Fireflies.ai"
     },
     {
+      "category" : "media",
       "domains" : [
         "gamma.app"
       ],
@@ -516,6 +613,7 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Gamma"
     },
     {
+      "category" : "media",
       "domains" : [
         "jasper.ai"
       ],
@@ -523,26 +621,32 @@ ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1d
       "name" : "Jasper"
     },
     {
+      "category" : "llm-tooling",
       "domains" : [
         "smith.langchain.com"
       ],
       "id" : "langsmith",
-      "name" : "LangSmith (LangChain)"
+      "name" : "LangSmith (LangChain)",
+      "notes" : "The subdomain only: langchain.com also hosts the company site and docs."
     },
     {
+      "category" : "llm-tooling",
       "domains" : [
         "helicone.ai"
       ],
       "id" : "helicone",
-      "name" : "Helicone"
+      "name" : "Helicone",
+      "notes" : "Also hosts the marketing site."
     },
     {
+      "category" : "llm-tooling",
       "domains" : [
         "langfuse.com"
       ],
       "id" : "langfuse",
-      "name" : "Langfuse"
+      "name" : "Langfuse",
+      "notes" : "Also hosts docs and marketing; self-hosted instances use their own domains."
     }
   ],
-  "version" : 3
+  "version" : 4
 }
