@@ -39,7 +39,7 @@
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-19T19:42:01Z",
+  "issuedAt" : "2026-11-21T16:27:53Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
@@ -186,6 +186,14 @@
       ],
       "id" : "replika",
       "name" : "Replika"
+    },
+    {
+      "domains" : [
+        "cp4.cloudflare.com",
+        "apple-relay.apple.com"
+      ],
+      "id" : "apple-intelligence",
+      "name" : "Apple Intelligence"
     },
     {
       "domains" : [
@@ -535,5 +543,5 @@
       "name" : "Langfuse"
     }
   ],
-  "version" : 2
+  "version" : 3
 }

@@ -1,4 +1,4 @@
-ledger-1 KIr/r7Rqlr7hcMSdwVc3+MKSqZVDK19gGiSknnshofQQejDA1xaFkqhmD1FUtbtKCoWAm8D8gCEBdRzF5pMMCw==
+ledger-1 CO0dmBGr7nKv0QJlhYU97fScNXylVLDcsC4BjzwSJbI1i9J2unvRVJAzeop36dw14fJHb1dZYYlYqVV5pCvsAA==
 {
   "encryptedDNS" : [
     {
@@ -40,7 +40,7 @@ ledger-1 KIr/r7Rqlr7hcMSdwVc3+MKSqZVDK19gGiSknnshofQQejDA1xaFkqhmD1FUtbtKCoWAm8D
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-19T19:42:01Z",
+  "issuedAt" : "2026-11-21T16:27:53Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
@@ -187,6 +187,14 @@ ledger-1 KIr/r7Rqlr7hcMSdwVc3+MKSqZVDK19gGiSknnshofQQejDA1xaFkqhmD1FUtbtKCoWAm8D
       ],
       "id" : "replika",
       "name" : "Replika"
+    },
+    {
+      "domains" : [
+        "cp4.cloudflare.com",
+        "apple-relay.apple.com"
+      ],
+      "id" : "apple-intelligence",
+      "name" : "Apple Intelligence"
     },
     {
       "domains" : [
@@ -536,5 +544,5 @@ ledger-1 KIr/r7Rqlr7hcMSdwVc3+MKSqZVDK19gGiSknnshofQQejDA1xaFkqhmD1FUtbtKCoWAm8D
       "name" : "Langfuse"
     }
   ],
-  "version" : 2
+  "version" : 3
 }
