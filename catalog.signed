@@ -1,4 +1,4 @@
-ledger-1 UdWVzkOKtlp6iPgFgpNQkGWYgF35xeUU7vConagfX6RA7N8EPqcw/Zgc4RQuc1IzG5tjK2vr4xF8qVfT9cA/Dg==
+ledger-1 PgeFgVzS5nF/EkLsSH5QTEJxK8eEgavay6obdHzjIAxAJZ5zZwiQPyqi3bauWk+ajdSS4ID5yEPc9B3t0IpYCA==
 {
   "encryptedDNS" : [
     {
@@ -45,7 +45,7 @@ ledger-1 UdWVzkOKtlp6iPgFgpNQkGWYgF35xeUU7vConagfX6RA7N8EPqcw/Zgc4RQuc1IzG5tjK2v
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-21T17:32:42Z",
+  "issuedAt" : "2026-11-23T18:33:51Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
@@ -77,7 +77,8 @@ ledger-1 UdWVzkOKtlp6iPgFgpNQkGWYgF35xeUU7vConagfX6RA7N8EPqcw/Zgc4RQuc1IzG5tjK2v
       "domains" : [
         "gemini.google.com",
         "generativelanguage.googleapis.com",
-        "aistudio.google.com"
+        "aistudio.google.com",
+        "robinfrontend-pa.googleapis.com"
       ],
       "id" : "google-gemini",
       "name" : "Google Gemini"
@@ -648,5 +649,5 @@ ledger-1 UdWVzkOKtlp6iPgFgpNQkGWYgF35xeUU7vConagfX6RA7N8EPqcw/Zgc4RQuc1IzG5tjK2v
       "notes" : "Also hosts docs and marketing; self-hosted instances use their own domains."
     }
   ],
-  "version" : 4
+  "version" : 5
 }

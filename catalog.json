@@ -44,7 +44,7 @@
       "name" : "AdGuard DNS"
     }
   ],
-  "issuedAt" : "2026-11-21T17:32:42Z",
+  "issuedAt" : "2026-11-23T18:33:51Z",
   "keyID" : "ledger-1",
   "schema" : 1,
   "vendors" : [
@@ -76,7 +76,8 @@
       "domains" : [
         "gemini.google.com",
         "generativelanguage.googleapis.com",
-        "aistudio.google.com"
+        "aistudio.google.com",
+        "robinfrontend-pa.googleapis.com"
       ],
       "id" : "google-gemini",
       "name" : "Google Gemini"
@@ -647,5 +648,5 @@
       "notes" : "Also hosts docs and marketing; self-hosted instances use their own domains."
     }
   ],
-  "version" : 4
+  "version" : 5
 }
